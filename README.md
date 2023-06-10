@@ -1,4 +1,6 @@
-# GDown on colab
+# GDown
+
+Download file (works on colab)
 ```python
 !pip install --upgrade --no-cache-dir gdown
 url = "gdrive file link"
