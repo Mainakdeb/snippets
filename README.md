@@ -25,3 +25,9 @@ for m in all_music_filenames:
     first_20_seconds = song[:20000]
     first_20_seconds.export("/content/cut_music/"+m, format="mp3")
 ```
+
+# Zip
+extract contents of a zip into a destination foler
+```bash
+unzip /content/foo.zip -d /content/destination_folder
+```
