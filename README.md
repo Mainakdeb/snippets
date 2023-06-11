@@ -12,6 +12,8 @@ gdown.download(url=url, output="filename", quiet=False, fuzzy=True)
 Cut all mp3 files in a folder
 ```Python
 !pip install pydub
+from os import listdir
+from os.path import isfile, join
 from pydub import AudioSegment
 
 mypath = "/content/full_audio_files/"
