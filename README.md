@@ -28,6 +28,43 @@ for m in all_music_filenames:
     first_20_seconds.export("/content/cut_music/"+m, format="mp3")
 ```
 
+Convert all audio files from a folder into mp3, and save to another folder
+```python
+import os
+from pydub import AudioSegment
+from pydub.exceptions import CouldntDecodeError
+
+!mkdir mp3_converted
+
+def convert_files_to_mp3(source_folder, destination_folder):
+    if not os.path.exists(destination_folder):
+        os.makedirs(destination_folder)
+
+    files = os.listdir(source_folder)
+
+    for file_name in files:
+        if not file_name.lower().endswith(('.wav', '.mp3', '.ogg', '.flac', '.aac', '.m4a')):
+            continue
+            
+        source_path = os.path.join(source_folder, file_name)
+        destination_path = os.path.join(destination_folder, os.path.splitext(file_name)[0] + '.mp3')
+
+        try:
+            # Load the audio file
+            audio = AudioSegment.from_file(source_path)
+        except CouldntDecodeError:
+            print(f"Skipping {file_name} - Unable to decode the file.")
+            continue
+
+        audio.export(destination_path, format='mp3')
+
+    print("Conversion complete!")
+
+source_folder = '/content/all_music'
+destination_folder = '/content/mp3_converted'
+convert_files_to_mp3(source_folder, destination_folder)
+```
+
 # Zip
 extract contents of a zip into a destination foler
 ```bash
