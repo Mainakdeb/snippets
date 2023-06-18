@@ -71,3 +71,12 @@ extract contents of a zip into a destination foler
 ```bash
 unzip /content/foo.zip -d /content/destination_folder
 ```
+
+# File
+List all files in a folder
+
+```python
+from os import listdir
+from os.path import isfile, join
+onlyfiles = [f for f in listdir(mypath) if isfile(join(mypath, f))]
+```
