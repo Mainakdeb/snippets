@@ -3,6 +3,7 @@
 Download file (works on colab)
 ```python
 !pip install --upgrade --no-cache-dir gdown
+import gdown
 url = "gdrive file link"
 gdown.download(url=url, output="filename", quiet=False, fuzzy=True)
 ```
