@@ -67,9 +67,14 @@ convert_files_to_mp3(source_folder, destination_folder)
 ```
 
 # Zip
-extract contents of a zip into a destination foler
+Extract contents of a zip into a destination foler
 ```bash
 unzip /content/foo.zip -d /content/destination_folder
+```
+
+Zip a folder
+```bash
+zip -r compressed_filename.zip foldername
 ```
 
 # File
