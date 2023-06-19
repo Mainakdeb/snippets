@@ -85,3 +85,20 @@ from os import listdir
 from os.path import isfile, join
 onlyfiles = [f for f in listdir(mypath) if isfile(join(mypath, f))]
 ```
+
+# Git
+which branch am i on?
+```
+git branch
+```
+
+
+switch to existing branch
+```bash
+git switch <existing_branch>
+```
+
+create new branch and switch to it
+```bash
+git switch -c <non_existing_branch>
+```
