@@ -1,5 +1,6 @@
-# GDown
+# Colab
 
+GDown
 Download file (works on colab)
 ```python
 !pip install --upgrade --no-cache-dir gdown
@@ -8,6 +9,12 @@ url = "gdrive file link"
 gdown.download(url=url, output="filename", quiet=False, fuzzy=True)
 ```
 
+Reload Modules (colab)
+```
+!pip install Ipython --upgrade
+%load_ext autoreload
+%autoreload 2
+```
 # Audio
 
 Cut all mp3 files in a folder
