@@ -109,3 +109,37 @@ create new branch and switch to it
 ```bash
 git switch -c <non_existing_branch>
 ```
+
+# Hugo Blog
+
+1. clone
+```
+git clone https://github.com/Mainakdeb/blog.git
+```
+
+2. Create and activate env for hugo dev
+```
+conda create --name hugo-local-env
+conda activate hugo-local-env
+```
+
+3. install hugo if needed
+```
+sudo apt install hugo
+```
+
+4. serve locally
+```
+hugo serve
+```
+
+5. Build Site
+```
+hugo
+```
+
+Upload contents from `./blog/public/` into a github repo named as `your_username.github.io`
+
+
+
+
