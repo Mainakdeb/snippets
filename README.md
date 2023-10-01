@@ -72,6 +72,17 @@ source_folder = '/content/all_music'
 destination_folder = '/content/mp3_converted'
 convert_files_to_mp3(source_folder, destination_folder)
 ```
+# Conda
+
+Create new env
+```bash
+conda create --name myenv
+```
+
+Activate env
+```bash
+conda activate myenv
+```
 
 # Zip
 Extract contents of a zip into a destination foler
