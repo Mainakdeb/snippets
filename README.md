@@ -110,7 +110,6 @@ which branch am i on?
 git branch
 ```
 
-
 switch to existing branch
 ```bash
 git switch <existing_branch>
@@ -119,6 +118,14 @@ git switch <existing_branch>
 create new branch and switch to it
 ```bash
 git switch -c <non_existing_branch>
+```
+
+in case you commit using the wrong username:
+```bash
+git rebase -r <some commit before all of your bad commits> \
+```
+```bash
+--exec 'git commit --amend --no-edit --reset-author'
 ```
 
 # Hugo Blog
