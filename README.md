@@ -128,6 +128,11 @@ git rebase -r <some commit before all of your bad commits> \
 --exec 'git commit --amend --no-edit --reset-author'
 ```
 
+git clone from a private repo using personal access token
+```bash
+!git clone https://<PERSONAL_ACCESS_TOKEN>@github.com/username/your_repo.git
+```
+
 # Hugo Blog
 
 1. clone
