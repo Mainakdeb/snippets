@@ -84,6 +84,11 @@ Activate env
 conda activate myenv
 ```
 
+Fix wrong python, even when in conda env
+```bash
+conda create --name env_name python=3.10
+```
+
 # Zip
 Extract contents of a zip into a destination foler
 ```bash
