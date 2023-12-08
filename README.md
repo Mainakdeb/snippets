@@ -135,7 +135,12 @@ git rebase -r <some commit before all of your bad commits> \
 
 git clone from a private repo using personal access token
 ```bash
-!git clone https://<PERSONAL_ACCESS_TOKEN>@github.com/username/your_repo.git
+git clone https://<PERSONAL_ACCESS_TOKEN>@github.com/username/your_repo.git
+```
+
+pull changes from remote repo and rebase
+```bash
+git pull --rebase origin main <or any branch>
 ```
 
 # Hugo Blog
