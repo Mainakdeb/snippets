@@ -193,3 +193,8 @@ Cancel all running jobs
 ```bash
 scancel -u <username>
 ```
+
+# SCP (Secure Copy Protocol)
+```bash
+scp <username>@ssh-host:/path-to-source ./path-to-destination/
+```
