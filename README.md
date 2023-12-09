@@ -173,6 +173,23 @@ hugo
 
 Upload contents from `./blog/public/` into a github repo named as `your_username.github.io`
 
+# SLURM
+Allocate resources to yourself from login node. 
+```bash
+srun -t 12:00:00 --ntasks-per-node=8 --mem=32G --gres=gpu:a100:1 --pty bash
+```
 
+Show running jobs
+```bash
+watch squeue -u <username>
+```
 
+Cancel job by name
+```bash
+scancel --name <your-job-name>
+```
 
+Cancel all running jobs
+```bash
+scancel -u <username>
+```
