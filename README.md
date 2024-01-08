@@ -143,6 +143,11 @@ pull changes from remote repo and rebase
 git pull --rebase origin main <or any branch>
 ```
 
+rename / move a file
+```bash
+git mv sourceLocation targetLocation
+```
+
 # Hugo Blog
 
 1. clone
