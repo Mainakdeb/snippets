@@ -203,3 +203,24 @@ scancel -u <username>
 ```bash
 scp <username>@ssh-host:/path-to-source ./path-to-destination/
 ```
+
+# Tmux
+
+when in a terminal, and you need another within
+```bash
+tmux
+```
+
+inside tmux, now to get a terminal (dont't forget to activate your conda env after this if needed)
+```bash
+bash
+```
+
+start your stuff, then press "ctrl+b, d" to exit tmux, "ctrl+b, x" will kill
+
+check back whats going on in tmux
+```bash
+tmux attach -t 0
+```
+
+
