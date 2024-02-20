@@ -110,6 +110,25 @@ onlyfiles = [f for f in listdir(mypath) if isfile(join(mypath, f))]
 ```
 
 # Git
+
+Set up username and email on current repo:
+```
+git config user.name "Mainakdeb"
+```
+
+```
+git config user.email "mainakmayukh2000@gmail.com"
+```
+
+check username or email before pushing
+```
+git config user.name
+```
+
+```
+git config user.email
+```
+
 which branch am i on?
 ```
 git branch
