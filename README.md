@@ -223,4 +223,8 @@ check back whats going on in tmux
 tmux attach -t 0
 ```
 
-
+# Python Package
+install a package to edit (from local repo)
+```bash
+python3 setup.py develop
+```
