@@ -247,3 +247,27 @@ install a package to edit (from local repo)
 ```bash
 python3 setup.py develop
 ```
+
+# Mounting Drive (Linux)
+
+find device to mount: 
+```bash
+df -h
+```
+
+mount: 
+```
+sudo mount /dev/sda /home/penfield/research/mega_storage
+```
+(You can unmount using `umount`)
+
+check if mounted:
+```
+sudo df -a -T -h
+```
+
+give permissions to mounted device: 
+```
+sudo chmod -R g+w /home/penfield/research/mega_storage
+sudo chmod -R g+w /home/penfield/research/mega_storage
+```
