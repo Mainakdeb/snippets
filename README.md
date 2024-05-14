@@ -89,6 +89,12 @@ Fix wrong python, even when in conda env
 conda create --name env_name python=3.10
 ```
 
+export conda env info
+```
+conda env export --no-builds > env.yml
+```
+to set up: `conda create env_name` `conda activate env_name` `conda env update --file env.yml`
+
 # Zip
 Extract contents of a zip into a destination foler
 ```bash
