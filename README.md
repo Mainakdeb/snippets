@@ -248,6 +248,13 @@ check back whats going on in tmux
 tmux attach -t 0
 ```
 
+# VSCode port forwarding
+
+in case default port forwarding fails, use ngrok (useful for pycortex or jupyter lab)
+```
+ngrok http <PORT>
+```
+
 # Python Package
 install a package to edit (from local repo)
 ```bash
