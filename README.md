@@ -284,3 +284,11 @@ give permissions to mounted device:
 sudo chmod -R g+w /home/penfield/research/mega_storage
 sudo chmod -R g+w /home/penfield/research/mega_storage
 ```
+
+
+# Publishing to pypi
+`python setup.py bdist_wheel sdist `
+`twine check dist/*`
+`twine upload --repository-url https://test.pypi.org/legacy/ dist/*`
+
+if you're using api key, type username __token__ and paste token as password.
