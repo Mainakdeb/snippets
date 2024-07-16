@@ -236,6 +236,10 @@ when in a terminal, and you need another within
 tmux
 ```
 
+```bash
+tmux new-session -s code-tunnel
+```
+
 inside tmux, now to get a terminal (dont't forget to activate your conda env after this if needed)
 ```bash
 bash
