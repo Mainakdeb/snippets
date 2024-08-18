@@ -204,9 +204,14 @@ hugo
 Upload contents from `./blog/public/` into a github repo named as `your_username.github.io`
 
 # SLURM
-Allocate resources to yourself from login node. 
+Allocate resources to yourself from login node (openmind)
 ```bash
 srun -t 12:00:00 --ntasks-per-node=8 --mem=32G --gres=gpu:a100:1 --pty bash
+```
+
+Allocate resources (PACE) (gpu v100)
+```
+salloc -A gts-rmurty7 -q inferno -N1 --ntasks-per-node=1 --gres=gpu:1 -t4:00:00
 ```
 
 Show running jobs
