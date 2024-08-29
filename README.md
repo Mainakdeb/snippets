@@ -264,6 +264,12 @@ in case default port forwarding fails, use ngrok (useful for pycortex or jupyter
 ngrok http <PORT>
 ```
 
+when running jupyter lab in vscode inside a slurm cluster (phoenix)
+
+```
+jupyter lab --NotebookApp.allow_origin='*' --NotebookApp.ip='0.0.0.0'
+```
+
 # Python Package
 install a package to edit (from local repo)
 ```bash
