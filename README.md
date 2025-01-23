@@ -117,6 +117,11 @@ onlyfiles = [f for f in listdir(mypath) if isfile(join(mypath, f))]
 
 # Git
 
+copy ssh key from remote machine (assuming already generated), next copy paste this in github GUI as a new key.
+```
+pbcopy < ~/.ssh/id_rsa.pub
+```
+
 Set up username and email on current repo:
 ```
 git config user.name "Mainakdeb"
