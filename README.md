@@ -177,6 +177,15 @@ rename / move a file
 ```bash
 git mv sourceLocation targetLocation
 ```
+# ssh vscode/cursor
+
+If you get 404 error when trying ssh in cursor (windows)
+1. Uninstall your current Remote-SSH extension
+2. Install version 0.113 of Remote-SSH from the Cursor marketplace
+3. Close any VS Code windows with active SSH connections
+4. Restart Cursor completely
+5. Try connecting again
+6. This should resolve the 404 error 
 
 # Hugo Blog
 
